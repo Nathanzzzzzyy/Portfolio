@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="index.html">MyPortfolio</a>
@@ -18,7 +20,7 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
@@ -28,29 +30,45 @@
   </div>
 </nav>
 
-
+<!-- Portfolio Section -->
 <section class="py-5">
   <div class="container">
-    <h2>My Portfolio</h2>
-    <p>Here are a few examples of the projects I’ve worked on, ranging from personal websites to system development tasks during my coursework.</p>
-    <<div class="row g-4">
-  <div class="col-md-4">
-    <img src="capstone.png" class="img-fluid rounded" alt="Project 2">
-    <h5 class="mt-2">Capstone Project</h5>
-    <p>A web-based inventory system developed for a small business as part of our final project.</p>
-  </div>
-  <div class="col-md-4">
-    <img src="Personal.png" class="img-fluid rounded" alt="Project 1">
-    <h5 class="mt-2">Personal Website</h5>
-    <p>A responsive and modern portfolio website to showcase my skills and background.</p>
-  </div>
-</div>
+    <h2 class="mb-4">My Portfolio</h2>
+    <p class="mb-5">Here are a few examples of the projects I’ve worked on, ranging from personal websites to system development tasks during my coursework.</p>
+
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="Personal.png" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Personal Website</h5>
+            <p class="card-text">A responsive and modern portfolio website to showcase my skills and background.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="capstone.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Capstone Project</h5>
+            <p class="card-text">A web-based inventory system developed for a small business as part of our final project.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
   <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
 </footer>
+
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
